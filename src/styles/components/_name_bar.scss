@@ -1,0 +1,20 @@
+@use '../variables';
+
+.name-bar{
+    padding: 16px 24px;
+    background-color: variables.$textColor;
+
+    display: flex;
+    justify-content: space-between;
+    
+    div{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 1024px){
+        &__infos {
+            gap: 16px;
+        }
+    }
+}
